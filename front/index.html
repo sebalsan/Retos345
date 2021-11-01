@@ -20,6 +20,7 @@
 			<li><a href="#tab4"><span class="fa fa-bookmark"></span><span class="tab-text">Mensajes</span></a></li>
 			<li><a href="#tab5"><span class="fa fa-bookmark"></span><span class="tab-text">Reservas</span></a></li>
 			<li><a href="#tab6"><span class="fa fa-bookmark"></span><span class="tab-text">Score</span></a></li>
+			<li><a href="#tab7"><span class="fa fa-bookmark"></span><span class="tab-text">Reportes</span></a></li>
 		</ul>
 
 		<div class="secciones">
@@ -121,6 +122,22 @@
 				<script type="text/javascript">
 					window.onload = autoInicioScore();
 				</script>
+			</article>
+<!------------------------Reportes---------------------------->
+			<article id="tab7">
+				<h1>Reportes</h1>
+				<div>
+					<label for="startdate">Fecha incio:</label>
+					<input type="date" id="RtstarDate" placeholder="Descripcion">
+					<label for="devolutionDate">Fecha final:</label>
+					<input type="date" id="RtdevolutionDate" placeholder="Descripcion">
+				</div>
+				<button onclick="traerReporteDate()">Reporte por fecha</button>
+    			<div id="resultadoDate"></div>
+				<button onclick="traerReporteStatus()">Reportes por status</button>
+    			<div id="resultadoStatus"></div>
+				<button onclick="traerReporteClientes()">Reportes Clientes</button>
+    			<div id="resultadoClientes"></div>
 			</article>
 		</div>
 	</div>
